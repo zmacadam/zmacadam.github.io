@@ -117,9 +117,12 @@ header .banner {
 .center-text {
     position: absolute;
     text-align: center;
-    top: 30%;
-    left: 30%;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: auto;
     color: white;
+    top: 30%;
 }
 
 .center-text h1 {
