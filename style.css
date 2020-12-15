@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -36,22 +38,14 @@ header .social li a:hover { color: #11ABB0; }
 
 section {
     width: 100%;
-    height: 90vh;
-    padding-top: 25px;
+    height: 100vh;
+    padding-top: 50px;
     margin-top: -50px;
 }
 
 section:last-child {
     padding-top: 0px;
     margin-top: 0px;
-}
-
-.content {
-    width: 94%;
-    margin: 4em auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
 }
 
 nav {
@@ -137,7 +131,11 @@ header .banner {
 }
 
 .row {
-    padding-top: 100px;
+    padding-top: 50px;
+}
+
+.col {
+    margin: 25px;
 }
 
 .about-info {
@@ -150,6 +148,10 @@ header .banner {
     color: white;
 }
 
+.header-gray {
+    color:darkgray;
+}
+
 
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
@@ -158,6 +160,7 @@ header .banner {
 .skills-container {
     width: 100%; /* Full width */
     background-color: #ddd; /* Grey background */
+    margin-top: -3%;
 }
 
 .skills {
@@ -171,15 +174,53 @@ header .banner {
 .web {width: 80%; background-color: #2196F3;} /* Blue */
 .sql {width: 75%; background-color: #f44336;} /* Red */
 .c {width: 70%; background-color: darkgoldenrod;}
-.python {width: 50%; background-color: darkviolet;}
+.google {width: 100%; background-color: darkviolet;}
+
+.button-center {
+    width: 180px;
+    height: 60px;
+    position: relative;
+    margin: 5% auto;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
 
 @media(max-width: 786px) {
-
-    .logo {
-        position: fixed;
-        top: 0;
-        margin-top: 16px;
-    }
 
     nav ul {
         max-height: 0px;
